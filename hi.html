@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Study Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Smart Study Hub</h1>
+        <p>Learn Smarter, Not Harder</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#tips">Study Tips</a></li>
+            <li><a href="#topics">Tough Topics</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="tips" class="content">
+        <h2>Effective Study Tips</h2>
+        <p>Discover the best techniques to learn faster and retain knowledge efficiently.</p>
+        <ul>
+            <li>Use Active Recall and Spaced Repetition</li>
+            <li>Teach What You Learn</li>
+            <li>Take Short Breaks (Pomodoro Technique)</li>
+            <li>Use Mind Maps and Visual Aids</li>
+        </ul>
+        <img src="1.png" alt="Math Tips Image" style="max-width:100%; height:auto; margin-top:20px;">
+    </section>
+    
+    <section id="topics" class="content">
+        <h2>Tough Topics Made Easy</h2>
+        <p>Choose a subject and get simplified explanations.</p>
+        <button onclick="location.href='math.html'">Math</button>
+        <button onclick="location.href='science.html'">Science</button>
+        <button onclick="location.href='history.html'">History</button>
+        <button onclick="location.href='language.html'">Language</button>
+    </section>
+    
+    <section id="resources" class="content">
+        <h2>Study Resources</h2>
+        <p>Download free PDFs, watch videos, and access question banks.</p>
+        <a href="#">Download Notes</a>
+        <a href="#">Watch Tutorials</a>
+    </section>
+    
+    <footer>
+        <p>Contact Us: support@smartstudyhub.com</p>
+    </footer>
+</body>
+</html>
+
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #0073e6;
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+}
+
+.content {
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background:#0073e6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+</style>

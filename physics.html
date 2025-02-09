@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Tips & Tricks</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        header {
+            background-color: #1E88E5;
+            color: white;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .accordion {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+
+        .accordion-item {
+            border-bottom: 1px solid #ccc;
+        }
+
+        .accordion-title {
+            background-color: #1E88E5;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            outline: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .accordion-content {
+            display: none;
+            padding: 10px;
+            text-align: left;
+            background-color: #f9f9f9;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .active, .accordion-title:hover {
+            background-color: #1565C0;
+        }
+
+        footer {
+            background-color: #1E88E5;
+            color: white;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Physics Tips & Tricks</h1>
+        <p>Understand Physics with Simple and Effective Techniques!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="science.html">Science</a></li>
+            <li><a href="biology.html">Biology</a></li>
+            <li><a href="physics.html">Physics</a></li>
+            <li><a href="chemistry.html">Chemistry</a></li>
+        </ul>
+    </nav>
+
+    <section class="content">
+        <h2>Physics Study Tips & Tricks</h2>
+        <div class="accordion">
+
+            <div class="accordion-item">
+                <button class="accordion-title">1. Master the Basics First</button>
+                <div class="accordion-content">
+                    <p><strong>Tip:</strong> Understand **Newton’s Laws**, **Force**, and **Energy** before moving on to advanced topics. 🚀</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-title">2. Use Real-Life Examples</button>
+                <div class="accordion-content">
+                    <p><strong>Example:</strong> When driving a car, **Newton’s First Law** explains why seatbelts are important! Relate physics to daily life. 🚗⚡</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-title">3. Solve Problems Step by Step</button>
+                <div class="accordion-content">
+                    <p><strong>Why?</strong> Physics is all about problem-solving! **Write down formulas, identify given data, and solve step by step.** 📝</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-title">4. Visualize Concepts with Diagrams</button>
+                <div class="accordion-content">
+                    <p><strong>Tip:</strong> Use **free-body diagrams**, **motion graphs**, and **electric field sketches** to understand complex topics. 📊</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-title">5. Practice with Mock Tests</button>
+                <div class="accordion-content">
+                    <p><strong>Practice:</strong> Take **timed tests** and quizzes to build confidence. The more you practice, the faster you solve problems! ⏳</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Smart Study Hub</p>
+    </footer>
+
+    <script>
+        const accordions = document.querySelectorAll(".accordion-title");
+
+        accordions.forEach(button => {
+            button.addEventListener("click", function() {
+                // Close all other accordion sections
+                accordions.forEach(otherButton => {
+                    if (otherButton !== this) {
+                        otherButton.nextElementSibling.style.display = "none";
+                        otherButton.classList.remove("active");
+                    }
+                });
+
+                // Toggle current accordion
+                const content = this.nextElementSibling;
+                this.classList.toggle("active");
+
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

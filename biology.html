@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biology Tips & Tricks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .accordion {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+
+        .accordion-item {
+            border-bottom: 1px solid #ccc;
+        }
+
+        .accordion-title {
+            background-color: #0073e6;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            outline: none;
+        }
+
+        .accordion-content {
+            display: none;
+            padding: 10px;
+            text-align: left;
+            background-color: #f9f9f9;
+        }
+
+        .active, .accordion-title:hover {
+            background-color: #0073e6;
+        }
+
+        footer {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Biology Tips & Tricks</h1>
+        <p>Learn biology in a smarter and easier way!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="science.html">Science</a></li>
+            <li><a href="biology.html">Biology</a></li>
+            <li><a href="physics.html">Physics</a></li>
+            <li><a href="chemistry.html">Chemistry</a></li>
+        </ul>
+    </nav>
+
+    <section class="content">
+        <h2>Biology Learning Tips</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-title">1. Use Diagrams to Visualize Concepts</button>
+                <div class="accordion-content">
+                    <p>Diagrams help in understanding complex biological processes better. Draw or review them frequently.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-title">2. Break Down Complex Processes</button>
+                <div class="accordion-content">
+                    <p>For example, break down photosynthesis into light-dependent and light-independent reactions.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-title">3. Use Mnemonics for Memorization</button>
+                <div class="accordion-content">
+                    <p>Use acronyms and memory tricks to remember biological terms and classifications.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-title">4. Watch Animations and Videos</button>
+                <div class="accordion-content">
+                    <p>Animations can help visualize biological functions like DNA replication or cell division.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-title">5. Practice with Flashcards</button>
+                <div class="accordion-content">
+                    <p>Flashcards help reinforce key concepts and terminology in a fun and interactive way.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Smart Study Hub</p>
+    </footer>
+
+    <script>
+        const accordions = document.querySelectorAll(".accordion-title");
+
+        accordions.forEach(button => {
+            button.addEventListener("click", function() {
+                const content = this.nextElementSibling;
+                this.classList.toggle("active");
+
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
