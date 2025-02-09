@@ -1,26 +1,26 @@
-# [Project Name] 🎯
+# [SMART STUDY HUB] 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: [DELIGHT]
 
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Member 1: [SHIFANA LATHEEF] - [CARMEL POLYTECHNIC COLLEGE]
+- Member 2: [AYISHA.S] - [CARMEL POLYTECHNIC COLLEGE]
+  
 
 ### Hosted Project Link
 [mention your project hosted project link here]
 
 ### Project Description
-[2-3 lines about what your project does]
+[TO help student in there edution ]
 
 ### The Problem statement
-[What ridiculous problem are you solving?]
+[student who tensed and deppressed about there exam and studies ]
 
 ### The Solution
-[How are you solving it? Keep it fun!]
+[this site  to guide student in there studies]
 
 ## Technical Details
 ### Technologies/Components Used
